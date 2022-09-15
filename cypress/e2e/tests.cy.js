@@ -15,8 +15,8 @@ describe('Login Form', () =>
     })
      it('ability to log in', () =>
     {
-      cy.get('input[name="username"]').type('test.taia')
-      cy.get('input[name="password"]').type('testtaia1992')
+      cy.get('input[aria-label="Phone number, username, or email"]').type('tvoy_patronus')
+      cy.get('input[aria-label="Password"]').type('patronus1992')
       cy.get('button[type="submit"]').click()
       cy.get('svg[aria-label="Loading..."]').should('be.visible').should('exist')
       cy.get('svg[aria-label="Loading..."]').should('not.exist')
