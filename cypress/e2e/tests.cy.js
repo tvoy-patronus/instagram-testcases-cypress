@@ -7,7 +7,7 @@ describe('Login Form', () =>
     it('Login form displaying', () =>
     {
       cy.get('button').contains('Allow essential and optional cookies').click()
-      cy.contains('Phone number, username or email adress').next().should('be.visible')
+      cy.contains('Phone number, username, or email').next().should('be.visible')
       cy.get('input[name="password"]').should('be.visible')
       cy.get('button[type="submit"]').should('be.visible')
       cy.get('button').contains('Log in with Facebook').should('be.visible')
@@ -18,6 +18,9 @@ describe('Login Form', () =>
       cy.get('input[name="username"]').type('test.taia')
       cy.get('input[name="password"]').type('testtaia1992')
       cy.get('button[type="submit"]').click()
+      cy.get('svg[aria-label="Loading..."]').should('be.visible').should('exist')
+      cy.get('svg[aria-label="Loading..."]').should('not.exist')
+      cy.get('button').contains('Not now').click()
     })
     
 })
