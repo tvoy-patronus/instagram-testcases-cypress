@@ -22,7 +22,7 @@ describe('Login Form', () =>
       cy.get('button[type="submit"]').click()
       cy.get('svg[aria-label="Loading..."]').should('be.visible').should('exist')
       cy.get('svg[aria-label="Loading..."]', {timeout: 4000}).should('not.exist')
-    
+      cy.get('div').contains('Save your login information?').should('be.visible')
     })
     
 })
