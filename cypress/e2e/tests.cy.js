@@ -7,7 +7,7 @@ describe('Login Form', () =>
     it('Login form displaying', () =>
     {
       cy.get('button').contains('Allow essential and optional cookies').click()
-      cy.get('input[name="username"]').should('be.visible')
+      cy.contains('Phone number, username or email adress').next().should('be.visible')
       cy.get('input[name="password"]').should('be.visible')
       cy.get('button[type="submit"]').should('be.visible')
       cy.get('button').contains('Log in with Facebook').should('be.visible')
