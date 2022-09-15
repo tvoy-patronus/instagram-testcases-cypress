@@ -8,10 +8,10 @@ describe('Login Form', () =>
     {
       cy.get('button').contains('Allow essential and optional cookies').click()
       cy.contains('Phone number, username, or email').next().should('be.visible')
-      cy.get('input[name="password"]').should('be.visible')
+      cy.contains('Password').next().should('be.visible')
       cy.get('button[type="submit"]').should('be.visible')
       cy.get('button').contains('Log in with Facebook').should('be.visible')
-      cy.get('a[href*="/accounts/password/reset"').should('be.visible')
+      cy.get('a').contains('Forgot password').should('be.visible')
     })
      it('ability to log in', () =>
     {
