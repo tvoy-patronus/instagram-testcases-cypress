@@ -7,7 +7,7 @@ The tests were written for **_training purposes only_**.
 
 >Please, note that tests were written for English version of Instagram.
 
->Sometimes Instagram can block accounts because of too frequent logging in, so the account which was created for these test can be blocked at the time you run them. If it is so, please, create a new account and change test data for these tests.
+>Sometimes Instagram can block accounts because of too frequent logging in, so the account which was created for these tests can be blocked at the time you run them. If it is so, please, create a new account and change test data for these tests.
 
 ## How to install 
 
