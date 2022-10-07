@@ -20,7 +20,7 @@ For successful work with this project you need:
 ```
 git clone https://github.com/tvoy-patronus/instagram-testcases-cypress.git`
 
-cd instagram-testcaese-cypress
+cd instagram-testcases-cypress
 
 npm install
 ```
